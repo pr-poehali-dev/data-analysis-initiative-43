@@ -3,18 +3,18 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Фотосессия",
+    price: "3 500",
+    period: " руб",
+    description: "Индивидуальная или праздничная съёмка",
+    features: ["До 2 часов съёмки", "2 образа / локации", "30 обработанных фото", "Галерея для скачивания", "Готово за 5 дней"],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Брови + Фото",
+    price: "4 900",
+    period: " руб",
+    description: "Комплекс: брови и съёмка в один день",
+    features: ["Коррекция и окрашивание бровей", "Фотосессия после процедуры", "40 обработанных фото", "Подбор формы под лицо", "Готово за 3 дня", "Скидка 20% на повтор"],
     popular: true,
   },
 ]
@@ -29,8 +29,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Прозрачные цены</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Никаких скрытых доплат — только результат, который вам понравится.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Записаться
               </button>
             </motion.div>
           ))}
